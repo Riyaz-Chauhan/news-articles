@@ -1,0 +1,81 @@
+.custom_pagination svg {
+    width: 50px;
+}
+
+.custom_pagination .flex-1.sm\:hidden {
+    display: none;
+}
+
+.custom_pagination .hidden.sm\:flex-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom_pagination nav {
+    display: block;
+    width: 100%;
+}
+
+.custom_pagination nav .hidden.sm\:flex-1 span.relative {
+    display: flex;
+    align-items: center;
+}
+
+.flatpickr-calendar {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.flatpickr-months {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #edf2f7;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.flatpickr-weekdays {
+    display: flex;
+    background-color: #edf2f7;
+}
+
+.flatpickr-weekday {
+    flex: 1;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.flatpickr-day {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: 0.125rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.flatpickr-day:hover {
+    background-color: #ebf4ff;
+}
+
+.flatpickr-day.selected {
+    background-color: #4299e1;
+    color: white;
+}
+
+.flatpickr-day.today {
+    background-color: #f7fafc;
+    border: 1px solid #cbd5e0;
+}
+
+#dropdownButton {
+    overflow: auto;
+    height: 40px;
+}
