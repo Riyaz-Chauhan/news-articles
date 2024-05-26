@@ -28,7 +28,7 @@ class NewsController extends Controller
 			$responseSource = $resSource['sources'];
 		}
 
-		$search = $request->input("search");
+		$search = $request->input("search", "");
 		$sources = $request->input("source", $allSource);
 		$sortBy = $request->input("sort_by", "");
 		$publishDate = $request->input("publish_date", "");
@@ -63,11 +63,11 @@ class NewsController extends Controller
 				$response["totalResults"],
 				$perPage,
 				$page,
-				['path' => request()->url()]
+				['path' => request()->url(), 'query' => request()->query()]
 			);
 		} else {
 			Session::flash('error', $response["message"]);
 		}
-		return view("news.index", compact("title", "paginator", "responseSource", "sources", "publishDateFrom", "publishDateTo", "sortBy"));
+		return view("news.index", compact("title", "paginator", "responseSource", "sources", "publishDateFrom", "publishDateTo", "sortBy", "search"));
 	}
 }
