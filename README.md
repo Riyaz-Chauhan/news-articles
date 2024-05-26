@@ -3,6 +3,7 @@
 - Extract the zip
 - Open the folder and rename .env.example to .env
 - Open the folder in terminal
+- Run the command "php artisan key:generate" to generate app key
 - Please make sure your system has installed Composer and Node
 - Run the command "composer install" OR "composer install --ignore-platform-reqs" 
 - After successfully installed all composer dependency run the command "npm i"
